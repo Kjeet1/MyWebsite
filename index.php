@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
      <!-- <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap" rel="stylesheet"> --> -->
      
-    <title>Document</title>
+    <title>Flower</title>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -206,31 +206,35 @@
     </h2>
   </div>
   <div class="w-50 m-auto">
-  <form action="userinfo.php" method="post" class="form-inline">
+  <form action="userin.php" method="post">
+    <!-- // class="form-inline" -->
   <div class="form-group">
     <label for="user">User Name</label>
-    <input type="text" class="form-control" id="user" placeholder="Enter name">
+    <input type="text" class="form-control" id="user" name="user" placeholder="Enter name">
   </div>
   
   <div class="form-group">
     <label for="email">Email</label>
-    <input type="email" class="form-control" id="email" placeholder="Enter email">
+    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
   </div>
   
 
   <div class="form-group">
     <label for="phone">Phone Number</label>
-    <input type="tel" class="form-control" id="phone" placeholder="Enter phone">
+    <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter phone">
   </div>
   
   <div class="form-group">
     <label for="comment">Comment</label>
-    <textarea class="form-control" id="comment" rows="3"></textarea>
+    <textarea class="form-control" id="comment" name="comment" rows="3"></textarea>
   </div>
 
   
   <div class="form-group">
-  <button type="button" class="btn btn-primary">Submit</button>
+  <!-- <button type="button" class="btn btn-primary" onclick="userinfo.php">Submit</button> -->
+  <button type="submit" class="btn btn-success">
+    Submit
+  </button>
   </div>
 
 
